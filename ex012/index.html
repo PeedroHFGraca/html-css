@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedado localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video width="250" poster="imagens/faetec.jpg" controls>
+        <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+        <source src="midia/Meu-Video.webm.webm" type="video/webm">
+        <p>Infelizmente seu navegador não consegue carregar o vídeo</p> <!--CASO O NAVEGADOR N CARREGUE O VÍDEO-->
+        <p>Assita <a href="https://www.pexels.com/pt-br/video/meio-ambiente-natureza-outono-selva-16754886/">clicando aqui</a></p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <!--Este vídeo está hospedado no servidor do YouTube-->
+    <!--Código copiado do YouTube-->
+    <p><iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player"
+       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+       allowfullscreen></iframe></p>
+
+    <h1>Inserindo vídeo do Vimeo</h1>
+    <!--Este vídeo está hospedado no servidor do YouTube-->
+    <!--Código copiado do Vímeo-->
+    <p><iframe src="https://player.vimeo.com/video/219245372?h=da3e749d08&color=ffffff&byline=0" width="560" height="315"
+        frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </p>
+
+
+</body>
+</html>

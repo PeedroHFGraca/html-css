@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode usar meu <a href="https://github.com/PeedroHFGraca?tab=repositories" target="_blank" rel="'external">repositório público 
+    no GitHub</a> (link externo)</p>
+    <!--
+        target="_blank" (  target = alvo       |    _blank = página em branco                                )
+        rel="external"  (  rel = Relativo à..  |    "external" = link do tipo externo, vai pra fora do site )
+    -->
+    <p>Acesse meu <a href="https://www.linkedin.com/in/pedro-henrique-ferreiragra%C3%A7a/">linkedin</a> também! (fechará esta página)</p>
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se quiser, pode acessar a <a href="pag002.html" hrel="next">segunda página</a></p>
+    <!-- Quando for link interno não precisa colocar a URL, apenas o nome da página (pag002) em HTML na mesma pastal do Index.html,  -->
+    
+    <!-- Valores do atributo Target:
+            _blank - abrir link em uma nova janela em branco
+            _self - abrir link própria aba
+            _top - desfazer todos os frames e abir o destino no navegador padrão
+            _parent - similar ao uso do _top em uma referênciia à janela mãe
+
+        Valores do atributo rel:
+            _next indica que o link é para a próxima parte do documento atual
+            _prev indica que o link é para a parte anterior do documento atual
+            _author indica que é um link para o site do autor do artigo atual
+            _external indica que é um link para outro site que não faz parte do site
+            _nofollow indica que é um link para um site com um link pago, propaganda de algo
+            
+            Ex: Hrel="next/prev" = * (referencia hipertexto) Hyperlinkrelativo à.. | "next" = próxima pág | "previous/prev" = anterior 
+    
+
+        -->
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" hreal="next" target="_self">página de notícias</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/cursoemvídeo-ex10.pdf.pdf" download="meulivro.pdf.pdf" target="_blank">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip.zip" download="meulivro.zip.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+
+</body>
+</html>

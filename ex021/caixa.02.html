@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruoping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: auto;
+            width: 800px;
+        }
+        header{
+            background-color: white;
+            padding: 10px; /*padding de 10px em todos os lados*/
+            margin: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        nav{
+           
+            /*border: 1px solid red;  PARA VER A BORDA CAIXA */
+            display: inline-block; /*vai permitir dar altura e largura as caixas inline*/
+            width: 400px;
+            background-color: lightgray;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315); /* SOMBRA */
+            /*1px(dislocamento horizontal), 1px(dislocamento vertical), 1px(espaçamento), black*/
+        }
+        nav > a { /* dentro de 'nav' selecionar (>) o link(a) */
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 50px;
+        }
+        nav > a:hover{
+            text-decoration: dotted;
+            background-color: rgba(148, 17, 255, 0.24);
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px 0px; /*20px(canto superior direito e inferior esquerdo), 0px(superior direito e inferior esquerdo)*/
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+        }
+        article{
+            background-color: lightblue;
+        }
+        article > aside{ /*dentro de 'article' selecionar(>) aside(parte periférica)*/
+            background-color: rgb(120, 169, 185);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%; /*para transformar a caixa em um esfera*/
+        }
+    </style>
+</head>
+<body>  
+    
+    <!-- Tags semânticas-->
+
+    <header>
+        <h1>Este é o header do Meu site</h1>
+        <nav> <!-- Navegação (nav) ou Menu -->
+            <a href="#" target="_blank">link</a>
+            <a href="#" target="_blank">link</a>
+            <a href="#" target="_blank">link</a>
+        </nav>
+    </header> 
+
+    <main>
+        <section style="background-color: antiquewhite;">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="assuntos">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam quis
+                pariatur recusandae nulla incidunt iste facere magni, natus tempora exercitationem,
+                optio dolores expedita enim autem mollitia adipisci qui tempore aliquid.</p>
+                <aside>Artigo escrito por José Lins</aside> <!-- Parte periférica -->
+            </article>     
+        </section>
+    </main>
+
+    <footer>
+        <span>Desenvolivido por Curso em Vídeo</span>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

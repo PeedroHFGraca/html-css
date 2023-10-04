@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="" start="4"> <!-- 'Ordened List' - type= 1, a, A, i, I  |  start='' de qual posição iniciar a lista -->
+        <li>Acordar</li>    <!--List Item, fechamento de tag opcional-->
+        <li>Tomar Café</li>
+        <li>Lavar o rosto
+        <li>Escovar os dentes
+        <!-- Type of list : 1; A; a; I; i (Romanos maiúsculo/min) -->
+    </ol>
+    <h2>Listas não Ordenadas</h2> 
+    <ul type="circle">           <!-- UL = Unordered list -->
+        <li>Pão
+        <li>Leite
+        <li>Tomate
+        <li>Manteiga
+        <!-- Type of list = disc (padrão); circle; square -->
+    </ul>
+
+
+    <h2>Misturando as coisas</h2>
+    <ol>
+        <li>Item 1
+        <li>Item 2
+        <ol type="a">
+            <li>Item 2.1
+            <li>Item 2.2                 <!--List Item, fechamento de tag opcional-->
+            <li>Item 2.3
+        </ol>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+
+
+    <h2>Lista de Jogos</h2>
+    <ul type="disc">               <!-- ABRINDO LISTA NÃO ORDENADA  -->
+
+        <li>Nintendinho</li>
+        <ol type="1">
+            <li>Mario Bros</li>
+                <ul>
+                <li type="square">Super Mario Bros 3</li>
+                <li type="square">Mario: Lost Levels</li>
+                </ul>
+            <li>Ninja Gaiden</li>
+                <ul>
+                <li type="square">Ninja Gaiden III</li>
+                </ul>
+        </ol>   
+
+        <li>Super Nintendo</li>
+        <ol type="1">
+            <li>Super Mario World</li>
+            <li>Donkey Kong</li>
+                <ul type="square">
+                    <li>Donkey Kong Counrty III</li>
+                    <li>Diddy's Kong Quest</li>
+                </ul>
+        </ol>
+
+        <li>Playstation 1</li>
+        <ol>
+            <li type="1">Final Fantasy</li>
+                <ul type="square">
+                    <li>Final Fantasy VII</li>
+                    <li>Final Fantasy IX</li>
+                </ul>
+            <li type="1">Castlevania</li>
+                <ul type="square">
+                    <li>Simphony of the Night</li>
+                </ul>
+        </ol>
+
+        
+        
+     
+    </ul> <!-- FECHANDO LISTA -->
+
+    
+    <h2>Lista de Definições</h2>
+    <!--
+        <dl> <\dl> (Definition List)
+        <dt> (Definition Term)
+        <dd> (Definition Description)
+    -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação utilizada para criar o conteúdo de sites.</dd>
+    </dl>
+    <dl>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a especificação de estilos em sites.</dd>
+    </dl>
+    <dl>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criar interatividade em sites.</dd>
+    </dl>
+    
+</body>
+</html>
