@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset> <!-- cria uma margem envolvendo os campos selecionar -->
+            <legend>Dados pessoais</legend> <!-- nomeia a margem -->
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" minlength="5"
+                    maxlength="20" required>
+                </p>
+                <p>
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required>
+                    <!-- verifica se tem @ -->
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel"
+                    pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" required placeholder="(11)91234-1234">
+                    <!--
+                        entre ^ x $ consigo definir um padrão que será aceito na caixa
+                        "\d" = dígitos ; {x} quantos dígitos
+                        ex: ^ (DDD), {4,5} 4 ou 5 dígitos -  4 ou 5 dígitos
+                                11   99661                -  7934
+                    -->
+                </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

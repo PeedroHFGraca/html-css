@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post"> <!-- n deixa a senha na url  -->
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="isu" required minlength="5" maxlength="15" size="12" placeholder="Nome do usuário" autocomplete="username"> 
+            <!-- required (não deixa seguir sem preencher) 
+                 minlength (quantidade mínima para senha)
+                 maxlength (quantidade máxima para senha)
+                 
+                 * Nos três casos, um ALERT do Navegador aparece automáticamente na tela caso seja preenchido incorretamente 
+            
+                 size (quantas letras vai mostrar por vez)
+                 placeholder (Dica pro usuário)
+                 autocomplete (dentro do Form só temos as opções ON e OFF)
+                 autocomplete (dentro do Input varias opções)
+                -->
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="5" size="12" placeholder="Senha do usuário" autocomplete="current-password"> 
+            <!-- password (senha de bolinhas) -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar"> <!-- Submit vai Enviar pro Backend-->
+            <input type="reset" value="Limpar"> <!-- reset vai limpar automáticamente -->
+        </p>
+    </form>
+</body>
+</html>
